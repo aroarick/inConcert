@@ -1,0 +1,10 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.title-part-one,
+.title-part-two {
+  color: white;
+  font-size: 2em;
+  text-align: right;
+}
