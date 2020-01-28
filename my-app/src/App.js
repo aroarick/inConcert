@@ -1,19 +1,20 @@
 import React from "react";
-import "./App.css";
-import Container from "react-bootstrap/Container";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+// import Navigation from "./components/Navigation/Navigation.js";
+import Home from "./components/Home/home";
+// import BlogSubmit from "./components/Blog/blogSubmit";
+// import Home from "./components/Home/Home.js";
 
 function App() {
   return (
-    <>
-      <Container>
-        <div className="title-part-one">
-          <h1>In</h1>
-        </div>
-        <div className="title-part-two">
-          <h1>Concert</h1>
-        </div>
-      </Container>
-    </>
+    <div>
+      <Router>
+        {/* <Navigation></Navigation> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
