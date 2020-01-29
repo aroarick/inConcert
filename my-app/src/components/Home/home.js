@@ -1,25 +1,32 @@
 import React from "react";
 import "../../style/App.css";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Home() {
   return (
     <>
-      <Container>
-        <div className="title-part-one">
-          <h1>In</h1>
-        </div>
-        <div className="title-part-two">
-          <h1>Concert</h1>
-        </div>
+      <Container fluid>
+        <Row className="row-1">
+          <Col>
+            <h4 className="col-1-text" id="inConcert">
+              In Concert
+            </h4>
+            <h4 className="col-1-text" id="findConcert">
+              Find your concert
+            </h4>
+          </Col>
+          <Col>
+            <h4 className="col-2-text" id="inConcert">
+              Concerts In:
+            </h4>
+            <h4 className="col-2-text" id="findConcert">
+              Dallas Area
+            </h4>
+          </Col>
+        </Row>
       </Container>
-      <div class="navbar" id="myNavbar">
-        <a href="#">Popular Artists</a>
-        <a href="#">Find a Concert</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          &#9776;
-        </a>
-      </div>
     </>
   );
 }
