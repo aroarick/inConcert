@@ -1,17 +1,76 @@
 body {
   background-color: black;
+  font-family: "Bebas Neue", cursive;
 }
 
 .row-1 {
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
+  width: 100%;
 }
 
 .col-1-text,
 .col-2-text {
-  margin: 0px auto 0px 15px;
+  margin-bottom: 0px;
 }
 
 #findConcert {
   font-weight: 100;
+  color: #993d30;
+}
+
+.row-1-col-1 {
+  border-right: 1px solid white;
+}
+
+.artist-row,
+.festival-row {
+  /* border: 1px solid white; */
+}
+
+.artist,
+.festival {
+  color: white;
+}
+
+.artist-1 {
+  /* border-right: 1px solid white; */
+  color: white;
+}
+
+button {
+  background-color: black;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  margin: 0.4em;
+  padding: 1em;
+  cursor: pointer;
+  background: black;
+  color: white;
+  z-index: 0;
+}
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #993d30;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+}
+button:hover:before {
+  transform: scaleX(1);
+}
+
+.row-2 {
+  border: 1px solid white;
+  color: white;
+  width: 100%;
 }
