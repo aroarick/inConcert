@@ -29,9 +29,11 @@ function Home() {
         </Row>
         <Row className="artist-row">
           <button>
-            <Col>
-              <h2 className="artist-1">Halsey</h2>
-            </Col>
+            <a href="../ArtistPage/artistPage.js">
+              <Col>
+                <h2 className="artist-1">Halsey</h2>
+              </Col>
+            </a>
           </button>
           <button>
             <Col>
